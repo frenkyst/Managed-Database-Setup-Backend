@@ -100,11 +100,42 @@
        
    ![image](https://user-images.githubusercontent.com/40049149/188915711-9b91b7b5-8559-47a5-8db1-8ab50db3ebf2.png)
 
+9. Install NVM
 
+       wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+       
+       exec bash
+       
+       nvm i 10
+       
+   ![image](https://user-images.githubusercontent.com/40049149/188919101-765d4a53-1992-4c5f-aad4-d886720cc616.png)
+   
+10. Import backend dumbflik dengan git clone
 
+        sudo git clone https://github.com/dumbwaysdev/dumbflix-backend.git
 
+    ![image](https://user-images.githubusercontent.com/40049149/188924968-f5fbe56c-152b-4333-b68c-22b72d2faae1.png)
 
+11. Ubah kepemilikan root ke user
 
+        sudo chown menther:menther dumbflix-backend
+
+    ![image](https://user-images.githubusercontent.com/40049149/188926322-00117ebe-9745-4340-a662-b4b7874523d7.png)
+    
+    
+    
+    
+    
+
+10. Install sequelize-cli untuk migrasi database
+
+        npm install --save-dev sequelize-cli
+
+    ![image](https://user-images.githubusercontent.com/40049149/188919803-ffbcc7b8-0d48-417c-8d2f-50f818b6c348.png)
+
+11. Inisialisasi sequelize-cli
+
+        npx sequelize-cli init
 
 
 

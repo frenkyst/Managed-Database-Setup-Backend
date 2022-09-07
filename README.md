@@ -53,11 +53,40 @@
        
    ![image](https://user-images.githubusercontent.com/40049149/188903148-893d587d-6071-4366-91a2-187432cc6d88.png)
 
-2. Jalankan comand berikut untuk install mysql
+2. Jalankan comand berikut untuk install MySQL
 
        sudo apt install mysql-server
 
    ![image](https://user-images.githubusercontent.com/40049149/188903345-b72e7f04-1fcb-4d40-baa3-26ccfb74d006.png)
+
+3. Konfigurasi MySQL
+
+       sudo mysql
+       
+   ![image](https://user-images.githubusercontent.com/40049149/188906577-6caa4911-2fa8-47f7-96fc-04919ab474c5.png)
+       
+       ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'mynewpassword';
+       
+   ![image](https://user-images.githubusercontent.com/40049149/188907055-3e193a66-fd27-4807-bef2-0aa67b55f4b3.png)
+  
+       
+4. Jalankan skrip keamanan (yes semua untuk skip)
+       
+       sudo mysql_secure_installation
+       
+   ![image](https://user-images.githubusercontent.com/40049149/188907475-280894af-a096-4173-8645-ef134ed10fc3.png)
+
+5. Masuk ke MySQL
+
+       sudo mysql -u root -p
+
+   ![image](https://user-images.githubusercontent.com/40049149/188909235-b681dc56-7518-49a9-9167-f701deb261e2.png)
+
+
+
+
+
+
 
 
 

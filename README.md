@@ -97,6 +97,7 @@
 8. Memberikan hak akses ke database dumbflix ke user menther
 
        GRANT ALL ON dumbflix.* TO 'menther'@'%';
+       GRANT ALL PRIVILEGES ON dumbflix.* TO 'menther'@'%';
 
    ![image](https://user-images.githubusercontent.com/40049149/188964272-a8ffeb61-6f32-4f43-8358-2ff1affd2adc.png)
 
@@ -132,13 +133,13 @@
 
         nano config/config.json
 
-    ![image](https://user-images.githubusercontent.com/40049149/188961787-83b5cea8-1d6a-4dee-aee4-fad5f5e8ab53.png)
+    ![image](https://user-images.githubusercontent.com/40049149/188965192-2972d846-4e57-4b6f-b35c-07f3af72ece0.png)
 
 14. Jalankan perintah berikut untuk migrasi data ke database
 
         npx sequelize-cli db:migrate
 
-    ![image](https://user-images.githubusercontent.com/40049149/188929690-45fc54de-ebf0-468e-96aa-4f39b0b4e984.png)
+    ![image](https://user-images.githubusercontent.com/40049149/188968502-0aba9495-7908-44b9-a8fc-7402e71110a0.png)
 
 15. Kita login ke server aplikasi kemudian edit konfigurasi api
 

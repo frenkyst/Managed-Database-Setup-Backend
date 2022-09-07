@@ -82,19 +82,31 @@
 
    ![image](https://user-images.githubusercontent.com/40049149/188909235-b681dc56-7518-49a9-9167-f701deb261e2.png)
 
-6. Membuat database baru
+6. Membuat user baru
+
+       CREATE USER 'menther'@'%' IDENTIFIED BY 'Bootcamp13!@';
+       
+   ![image](https://user-images.githubusercontent.com/40049149/188963727-92dfa662-c7a6-4dc2-921d-c8a46eeac542.png)
+
+7. Membuat database baru
 
        CREATE DATABASE dumbflix;
 
    ![image](https://user-images.githubusercontent.com/40049149/188913105-d165828f-da69-4e3f-ab03-5d4d19ba9aa3.png)
 
-7. Jangan lupa untuk menggunakan nya
+8. Memberikan hak akses ke database dumbflix ke user menther
+
+       GRANT ALL ON dumbflix.* TO 'menther'@'%';
+
+   ![image](https://user-images.githubusercontent.com/40049149/188964272-a8ffeb61-6f32-4f43-8358-2ff1affd2adc.png)
+
+9. Jangan lupa untuk menggunakan nya
 
        use dumbflix;
       
    ![image](https://user-images.githubusercontent.com/40049149/188913500-18c5c759-584e-4081-9f2d-48b19ac96a22.png)
 
-8. Ubah configurasi MySQL nya agar bisa di akses dari luar jaringan local menjadi 0.0.0.0
+10. Ubah configurasi MySQL nya agar bisa di akses dari luar jaringan local menjadi 0.0.0.0
 
        sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
        
@@ -102,7 +114,7 @@
        
    ![image](https://user-images.githubusercontent.com/40049149/188915711-9b91b7b5-8559-47a5-8db1-8ab50db3ebf2.png)
 
-9. Install NVM
+11. Install NVM
 
        wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
        

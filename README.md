@@ -98,6 +98,8 @@
 
        sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
        
+       sudo systemctl restart mysql.service
+       
    ![image](https://user-images.githubusercontent.com/40049149/188915711-9b91b7b5-8559-47a5-8db1-8ab50db3ebf2.png)
 
 9. Install NVM

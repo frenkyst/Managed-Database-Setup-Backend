@@ -136,8 +136,22 @@
 
     ![image](https://user-images.githubusercontent.com/40049149/188929690-45fc54de-ebf0-468e-96aa-4f39b0b4e984.png)
 
+13. Kita login ke server aplikasi kemudian edit konfigurasi api
+
+        nano dumbflix-frontend/src/config/api.js
+
+    ![image](https://user-images.githubusercontent.com/40049149/188949995-ec4d92c3-6864-4b17-9ee0-c57a550b5c86.png)
+    
+14. Restart PM2 dan instal ulang npm
+
+        pm2 delete all
+        
+        npm install
+        
+    ![image](https://user-images.githubusercontent.com/40049149/188944518-d49e1bf4-9496-4409-8390-0cfae26d234f.png)
 
 
+        
 
 
 

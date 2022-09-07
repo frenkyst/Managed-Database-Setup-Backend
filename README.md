@@ -45,8 +45,19 @@
    ![image](https://user-images.githubusercontent.com/40049149/188901526-e3a4e15f-a2b9-437f-abed-87002ed0ad9c.png)
 
 
+## Installation Database mysql
 
+1. Update sistem terlebih dulu
 
+       sudo apt update
+       
+   ![image](https://user-images.githubusercontent.com/40049149/188903148-893d587d-6071-4366-91a2-187432cc6d88.png)
+
+2. Jalankan comand berikut untuk install mysql
+
+       sudo apt install mysql-server
+
+   ![image](https://user-images.githubusercontent.com/40049149/188903345-b72e7f04-1fcb-4d40-baa3-26ccfb74d006.png)
 
 
 

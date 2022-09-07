@@ -82,9 +82,23 @@
 
    ![image](https://user-images.githubusercontent.com/40049149/188909235-b681dc56-7518-49a9-9167-f701deb261e2.png)
 
+6. Membuat database baru
 
+       CREATE DATABASE dumbflix;
 
+   ![image](https://user-images.githubusercontent.com/40049149/188913105-d165828f-da69-4e3f-ab03-5d4d19ba9aa3.png)
 
+7. Jangan lupa untuk menggunakan nya
+
+       use dumbflix;
+      
+   ![image](https://user-images.githubusercontent.com/40049149/188913500-18c5c759-584e-4081-9f2d-48b19ac96a22.png)
+
+8. Ubah configurasi MySQL nya agar bisa di akses dari luar jaringan local menjadi 0.0.0.0
+
+       sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+       
+   ![image](https://user-images.githubusercontent.com/40049149/188915711-9b91b7b5-8559-47a5-8db1-8ab50db3ebf2.png)
 
 
 

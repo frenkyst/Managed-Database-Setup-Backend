@@ -108,29 +108,19 @@
 
 10. Ubah configurasi MySQL nya agar bisa di akses dari luar jaringan local menjadi 0.0.0.0
 
-       sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+        sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
        
-       sudo systemctl restart mysql.service
+        sudo systemctl restart mysql.service
        
    ![image](https://user-images.githubusercontent.com/40049149/188915711-9b91b7b5-8559-47a5-8db1-8ab50db3ebf2.png)
 
-11. Install NVM
-
-       wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-       
-       exec bash
-       
-       nvm i 10
-       
-   ![image](https://user-images.githubusercontent.com/40049149/188919101-765d4a53-1992-4c5f-aad4-d886720cc616.png)
-   
-10. Ke server aplikasi Import backend dumbflik dengan git clone
+11. Ke server aplikasi Import backend dumbflik dengan git clone
 
         git clone https://github.com/dumbwaysdev/dumbflix-backend.git
 
     ![image](https://user-images.githubusercontent.com/40049149/188961219-c64cc781-fe51-47c6-a027-ab5d6f134f09.png)
 
-11. Masuk ke directory dumbflix-backend dan install sequelize-cli untuk migrasi database
+12. Masuk ke directory dumbflix-backend dan install sequelize-cli untuk migrasi database
     
         cd dumbflix-backend/
 
@@ -138,25 +128,25 @@
 
     ![image](https://user-images.githubusercontent.com/40049149/188961353-319162f2-906b-4692-aa38-f40285c7bf1a.png)
 
-12. Seting konfigurasi sequelize-cli
+13. Seting konfigurasi sequelize-cli
 
         nano config/config.json
 
     ![image](https://user-images.githubusercontent.com/40049149/188961787-83b5cea8-1d6a-4dee-aee4-fad5f5e8ab53.png)
 
-13. Jalankan perintah berikut untuk migrasi data ke database
+14. Jalankan perintah berikut untuk migrasi data ke database
 
         npx sequelize-cli db:migrate
 
     ![image](https://user-images.githubusercontent.com/40049149/188929690-45fc54de-ebf0-468e-96aa-4f39b0b4e984.png)
 
-14. Kita login ke server aplikasi kemudian edit konfigurasi api
+15. Kita login ke server aplikasi kemudian edit konfigurasi api
 
         nano dumbflix-frontend/src/config/api.js
 
     ![image](https://user-images.githubusercontent.com/40049149/188949995-ec4d92c3-6864-4b17-9ee0-c57a550b5c86.png)
     
-15. Restart PM2 dan instal ulang npm
+16. Restart PM2 dan instal ulang npm
 
         pm2 delete all
         

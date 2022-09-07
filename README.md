@@ -112,11 +112,11 @@
        
    ![image](https://user-images.githubusercontent.com/40049149/188919101-765d4a53-1992-4c5f-aad4-d886720cc616.png)
    
-10. Import backend dumbflik dengan git clone
+10. Ke server aplikasi Import backend dumbflik dengan git clone
 
         git clone https://github.com/dumbwaysdev/dumbflix-backend.git
 
-    ![image](https://user-images.githubusercontent.com/40049149/188927922-b98a5fd6-6f8f-47ac-b1b0-a648ea041a89.png)
+    ![image](https://user-images.githubusercontent.com/40049149/188961219-c64cc781-fe51-47c6-a027-ab5d6f134f09.png)
 
 11. Masuk ke directory dumbflix-backend dan install sequelize-cli untuk migrasi database
     
@@ -124,27 +124,27 @@
 
         npm install --save-dev sequelize-cli
 
-    ![image](https://user-images.githubusercontent.com/40049149/188928736-582d7dc9-c5e7-4490-9f36-36faa668a092.png)
+    ![image](https://user-images.githubusercontent.com/40049149/188961353-319162f2-906b-4692-aa38-f40285c7bf1a.png)
 
-11. Seting konfigurasi sequelize-cli
+12. Seting konfigurasi sequelize-cli
 
         nano config/config.json
 
-    ![image](https://user-images.githubusercontent.com/40049149/188929276-f55678f7-612c-4a0c-b72b-cd1a7e68e7de.png)
+    ![image](https://user-images.githubusercontent.com/40049149/188961787-83b5cea8-1d6a-4dee-aee4-fad5f5e8ab53.png)
 
-12. Jalankan perintah berikut untuk migrasi data ke database
+13. Jalankan perintah berikut untuk migrasi data ke database
 
         npx sequelize-cli db:migrate
 
     ![image](https://user-images.githubusercontent.com/40049149/188929690-45fc54de-ebf0-468e-96aa-4f39b0b4e984.png)
 
-13. Kita login ke server aplikasi kemudian edit konfigurasi api
+14. Kita login ke server aplikasi kemudian edit konfigurasi api
 
         nano dumbflix-frontend/src/config/api.js
 
     ![image](https://user-images.githubusercontent.com/40049149/188949995-ec4d92c3-6864-4b17-9ee0-c57a550b5c86.png)
     
-14. Restart PM2 dan instal ulang npm
+15. Restart PM2 dan instal ulang npm
 
         pm2 delete all
         

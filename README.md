@@ -38,6 +38,11 @@
 
    ![image](https://user-images.githubusercontent.com/40049149/188900413-e74ec1fa-2b48-4c3a-b98f-cfb1705372ab.png)
 
+7. Selesai tinggal coba masuk ke server dengan key ssh
+
+       ssh -i id_rsa menther@web-server
+       
+   ![image](https://user-images.githubusercontent.com/40049149/188901526-e3a4e15f-a2b9-437f-abed-87002ed0ad9c.png)
 
 
 

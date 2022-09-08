@@ -155,8 +155,48 @@
         
     ![image](https://user-images.githubusercontent.com/40049149/188944518-d49e1bf4-9496-4409-8390-0cfae26d234f.png)
 
+17. Jalankan aplikasi frontend dan backend
 
-        
+        cd dumbflix-frontend/
+        pm2 start ecosystem.config.js
+        cd ../dumbflix-backend/
+        pm2 start ecosystem.config.js
+
+    ![image](https://user-images.githubusercontent.com/40049149/189166254-db67f0ab-3e12-4441-a1cb-dfdf8068802d.png)
+
+18. Buka dibrowser https://frenky.studentdumbways.my.id/
+
+    ![image](https://user-images.githubusercontent.com/40049149/189166820-7729dfe1-c94f-473b-8415-d0416d3aaeda.png)
+
+
+## Setup SSL dengan CertBot
+
+Jalankan perintah berikut
+
+    sudo apt-get install snapd
+    
+![Screenshot from 2022-09-08 11-09-43](https://user-images.githubusercontent.com/40049149/189168233-95c77b97-b610-4abd-aa00-b528ab1d6827.png)
+    
+    sudo snap install core
+    sudo snap refresh core
+    
+![Screenshot from 2022-09-08 11-11-20](https://user-images.githubusercontent.com/40049149/189168421-e31c5a96-61c0-4944-b0b5-69ae66124fbd.png)
+
+    sudo apt-get install certbot python3-certbot-nginx
+
+![Screenshot from 2022-09-08 11-12-42](https://user-images.githubusercontent.com/40049149/189168460-2badc6a2-cc5e-4e25-95fd-85fcfd56a7a7.png)
+
+    sudo certbot --nginx
+    
+![Screenshot from 2022-09-08 11-13-58](https://user-images.githubusercontent.com/40049149/189168487-41fa0379-754a-40ed-a723-6abd42b5ae65.png)
+
+Ikuti instruksi yang di tampilkan sampai selesai
+
+
+
+
+
+
 
 
 
